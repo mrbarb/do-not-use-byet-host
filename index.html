@@ -1,6 +1,22 @@
 <doctype=html>
  <html>
 <head>
+<style>
+ body {
+  padding: 25px;
+  background-color: black;
+  color: white;
+  font-size: 25px;
+}
+ </style>
+<script>
+
+        $.getJSON("https://api.ipify.org?format=json",
+                                          function(data) {
+  
+            $("#gfg").html(data.ip);
+        })
+ </script>
 </head>
 <body>
    placeholder
