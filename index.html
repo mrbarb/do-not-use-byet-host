@@ -32,18 +32,20 @@
 }
  </style>
 <script>
+function json(url) {
+      return fetch(url).then(res => res.json());
+    }
 
-        $.getJSON("https://yeessss.herokuapp.com?format=json",
-                                          function(data) {
-  
-            $("#gg").html(data.ip);
-        })
+    json(`https://yeessss.herokuapp.com?format=json`).then(data => {
+      console.log(data.ip);
+      document.getElementById('userip').innerHTML = data.ip;
+    });
  </script>
 </head>
 <body>
  <p> sussy pgrabber working 2002! </p>
         <p> yo ip is </p>
- <p id="gg"></p>
+ <p id="userip"></p>
  oki thxnbai
    </body>
   </html>
