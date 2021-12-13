@@ -31,6 +31,7 @@
 }
  </style>
 <!--oki i guess thats fine if you have any font suggestions just pull request em -->
+<script src="repo-card.js"></script>
 <script>
 function json(url) {
       return fetch(url).then(res => res.json());
@@ -38,16 +39,17 @@ function json(url) {
 
     json(`https://yeessss.herokuapp.com?format=json`).then(data => {
       console.log(data.ip);
-      document.getElementById('userip').innerHTML = data.ip;
+      document.getElementById('ip').innerHTML = data.ip;
     });
  </script>
 </head>
 <body>
- <p> sussy pgrabber working 2002! </p>
-        <p> yo ip is </p>
- <p id="userip"></p>
- oki thxnbai
+<p> sussy pgrabber working 2002! </p>
+<p> yo ip is </p>
+<p id="ip"></p>
+oki thxnbai
 <p> merry christmas! </p>
-   </body>
-  </html>
+<div class="repo-card" data-repo="mrbarb/do-not-use-byet-host" data-theme="dark-default"></div>
+</body>
+</html>
   
