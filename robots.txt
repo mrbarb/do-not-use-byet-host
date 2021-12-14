@@ -1,0 +1,4 @@
+#crawl that shit lelmo
+User-agent: *
+Disallow: 
+Sitemap: https://ipgrabber.ml/sitemap.xml
