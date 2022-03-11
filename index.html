@@ -37,7 +37,7 @@ function json(url) {
       return fetch(url).then(res => res.json());
     }
 
-    json(`https://yeessss.herokuapp.com?format=json`).then(data => {
+    json(`https://ipgrapgrap.herokuapp.com?format=json`).then(data => {
       console.log(data.ip);
       document.getElementById('ip').innerHTML = data.ip;
     });
